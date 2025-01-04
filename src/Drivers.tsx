@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./drivers.css";
 import DriverCard from "./components/DriverCard";
 
@@ -28,6 +29,7 @@ function Drivers() {
   const [data, setData] = useState<Driver[]>([]);
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`http://localhost:8080/drivers?pageNo=${page}`)
@@ -39,12 +41,22 @@ function Drivers() {
       .catch((error) => console.error("Error fetching data:", error));
   }, [page]);
 
+  const handleDriverClick = (driverId: number) => {
+    navigate(`/driver/${driverId}`);
+  };
+
   return (
     <section>
       <article className="drivers-container">
         <div className="drivers-grid">
           {data.map((driver) => (
-            <DriverCard key={driver.driverId} driver={driver} />
+            <div
+              key={driver.driverId}
+              onClick={() => handleDriverClick(driver.driverId)}
+              className="driver-item"
+            >
+              <DriverCard driver={driver} />
+            </div>
           ))}
         </div>
         <div className="pagination">
