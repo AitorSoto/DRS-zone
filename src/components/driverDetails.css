@@ -1,0 +1,44 @@
+.constructors-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 20px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
+  padding: 20px 0;
+  scrollbar-width: none;
+}
+
+/* Ocultar scrollbar en Chrome/Safari */
+.constructors-list::-webkit-scrollbar {
+  display: none;
+}
+
+.back-button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #e10600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.back-button:hover {
+  background-color: #cc0000;
+}
+
+@media screen and (max-width: 768px) {
+  .constructors-list {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

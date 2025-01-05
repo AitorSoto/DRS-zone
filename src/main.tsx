@@ -6,6 +6,6 @@ import Drivers from "./Drivers.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Drivers />
+    <App />
   </StrictMode>
 );

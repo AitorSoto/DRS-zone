@@ -3,13 +3,27 @@
   margin: 0;
 }
 
-.drivers-list {
+.search-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.drivers-grid {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 16px;
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.driver-item {
+  flex: 1 1 calc(33.333% - 32px); /* Tres columnas con espacio entre ellas */
+  box-sizing: border-box;
 }
 
 .pagination {
@@ -27,4 +41,17 @@
 
 .pagination span {
   margin: 0 10px;
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .driver-item {
+    flex: 1 1 calc(50% - 16px); /* Dos columnas en pantallas pequeñas */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .driver-item {
+    flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+  }
 }
