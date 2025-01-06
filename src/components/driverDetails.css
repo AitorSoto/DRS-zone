@@ -7,6 +7,8 @@
   -webkit-overflow-scrolling: touch; /* Scroll suave en iOS */
   padding: 20px 0;
   scrollbar-width: none;
+  width: 100%;
+  height: 100%;
 }
 
 /* Ocultar scrollbar en Chrome/Safari */
@@ -31,9 +33,8 @@
 
 @media screen and (max-width: 768px) {
   .constructors-list {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: flex-start;
-    padding: 10px;
     margin: 0;
   }
 

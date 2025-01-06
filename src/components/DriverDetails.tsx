@@ -57,12 +57,16 @@ const DriverDetails: React.FC = () => {
       <button className="back-button" onClick={() => navigate(-1)}>
         Volver
       </button>
-      <h1>
+      <h1 className="f1-font-bold">
         {driver.forename} {driver.surname}
       </h1>
-      <p>Code: {driver.code == null ? "Retired" : driver.code}</p>
-      <p>Number: {driver.number == 0 ? "Retired" : driver.number}</p>
-      <p>Nationality: {driver.nationality}</p>
+      <p className="f1-font">
+        Code: {driver.code == null ? "Retired" : driver.code}
+      </p>
+      <p className="f1-font">
+        Number: {driver.number == 0 ? "Retired" : driver.number}
+      </p>
+      <p className="f1-font">Nationality: {driver.nationality}</p>
       <div className="constructors-list">
         {constructors.map((constructor) => (
           <ConstructorCard key={constructor} constructorName={constructor} />

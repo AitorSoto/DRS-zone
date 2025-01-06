@@ -1,0 +1,846 @@
+[
+  {
+    "name": "Adams",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "AFM",
+    "color": "#A93226"
+  },
+  {
+    "name": "AGS",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "AlphaTauri",
+    "color": "#1E2A47"
+  },
+  {
+    "name": "Alpine F1 Team",
+    "color": "#0090D6"
+  },
+  {
+    "name": "Alta",
+    "color": "#B22222"
+  },
+  {
+    "name": "Amon",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Andrea Moda",
+    "color": "#D35400"
+  },
+  {
+    "name": "Apollon",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Arrows",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Arzani-Volpini",
+    "color": "#5D6D7E"
+  },
+  {
+    "name": "Aston Butterworth",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "Aston Martin",
+    "color": "#006F3F"
+  },
+  {
+    "name": "ATS",
+    "color": "#F5B041"
+  },
+  {
+    "name": "BAR",
+    "color": "#FF2A00"
+  },
+  {
+    "name": "Behra-Porsche",
+    "color": "#A93226"
+  },
+  {
+    "name": "Bellasi",
+    "color": "#7D3C98"
+  },
+  {
+    "name": "Benetton",
+    "color": "#006F2A"
+  },
+  {
+    "name": "BMW",
+    "color": "#0066B1"
+  },
+  {
+    "name": "BMW Sauber",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Boro",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Brabham",
+    "color": "#D35400"
+  },
+  {
+    "name": "Brabham-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Brabham-BRM",
+    "color": "#FFC300"
+  },
+  {
+    "name": "Brabham-Climax",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Brabham-Ford",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Brabham-Repco",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "Brawn",
+    "color": "#D9DF00"
+  },
+  {
+    "name": "BRM",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "BRM-Ford",
+    "color": "#E67E22"
+  },
+  {
+    "name": "Bromme",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "BRP",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Bugatti",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Caterham",
+    "color": "#1D8436"
+  },
+  {
+    "name": "Christensen",
+    "color": "#FFC300"
+  },
+  {
+    "name": "Cisitalia",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Coloni",
+    "color": "#6C3483"
+  },
+  {
+    "name": "Connaught",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Connew",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "Cooper",
+    "color": "#2980B9"
+  },
+  {
+    "name": "Cooper-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Cooper-ATS",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Cooper-Borgward",
+    "color": "#D35400"
+  },
+  {
+    "name": "Cooper-BRM",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Cooper-Castellotti",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Cooper-Climax",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "Cooper-Ferrari",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Cooper-Ford",
+    "color": "#3498DB"
+  },
+  {
+    "name": "Cooper-Maserati",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Cooper-OSCA",
+    "color": "#5D6D7E"
+  },
+  {
+    "name": "Dallara",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "De Tomaso",
+    "color": "#B22222"
+  },
+  {
+    "name": "De Tomaso-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "De Tomaso-Ferrari",
+    "color": "#FF5733"
+  },
+  {
+    "name": "De Tomaso-Osca",
+    "color": "#6C3483"
+  },
+  {
+    "name": "Deidt",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Del Roy",
+    "color": "#BDBDBD"
+  },
+  {
+    "name": "Derrington",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Dunn",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Eagle",
+    "color": "#2E86C1"
+  },
+  {
+    "name": "Eagle-Climax",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "Eagle-Weslake",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Elder",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Embassy Hill",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Emeryson",
+    "color": "#3498DB"
+  },
+  {
+    "name": "EMW",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "ENB",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Ensign",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Epperly",
+    "color": "#F39C12"
+  },
+  {
+    "name": "ERA",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Euro Brun",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Ewing",
+    "color": "#D35400"
+  },
+  {
+    "name": "Ferguson",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Ferrari",
+    "color": "#DC2828"
+  },
+  {
+    "name": "Fittipaldi",
+    "color": "#16A085"
+  },
+  {
+    "name": "Fondmetal",
+    "color": "#7D3C98"
+  },
+  {
+    "name": "Footwork",
+    "color": "#FF8C00"
+  },
+  {
+    "name": "Force India",
+    "color": "#218C74"
+  },
+  {
+    "name": "Forti",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Frazer Nash",
+    "color": "#D35400"
+  },
+  {
+    "name": "Fry",
+    "color": "#5D6D7E"
+  },
+  {
+    "name": "Gilby",
+    "color": "#BDBDBD"
+  },
+  {
+    "name": "Gordini",
+    "color": "#003366"
+  },
+  {
+    "name": "Haas F1 Team",
+    "color": "#5C5C5C"
+  },
+  {
+    "name": "Hall",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Hesketh",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Honda",
+    "color": "#C8102E"
+  },
+  {
+    "name": "HRT",
+    "color": "#D35400"
+  },
+  {
+    "name": "HWM",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Iso Marlboro",
+    "color": "#A93226"
+  },
+  {
+    "name": "Jaguar",
+    "color": "#006747"
+  },
+  {
+    "name": "JBW",
+    "color": "#FF8C00"
+  },
+  {
+    "name": "Jordan",
+    "color": "#F4D03F"
+  },
+  {
+    "name": "Kauhsen",
+    "color": "#C8102E"
+  },
+  {
+    "name": "Klenk",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "Kojima",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Kurtis Kraft",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Kuzma",
+    "color": "#D35400"
+  },
+  {
+    "name": "Lambo",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Lancia",
+    "color": "#004B87"
+  },
+  {
+    "name": "Langley",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Larrousse",
+    "color": "#9B111E"
+  },
+  {
+    "name": "LDS",
+    "color": "#A93226"
+  },
+  {
+    "name": "LDS-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "LDS-Climax",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "LEC",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Lesovsky",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Leyton House",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Life",
+    "color": "#F5B041"
+  },
+  {
+    "name": "Ligier",
+    "color": "#006D4D"
+  },
+  {
+    "name": "Lola",
+    "color": "#2980B9"
+  },
+  {
+    "name": "Lotus",
+    "color": "#006400"
+  },
+  {
+    "name": "Lotus F1",
+    "color": "#006400"
+  },
+  {
+    "name": "Lotus-Borgward",
+    "color": "#B22222"
+  },
+  {
+    "name": "Lotus-BRM",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Lotus-Climax",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Lotus-Ford",
+    "color": "#D35400"
+  },
+  {
+    "name": "Lotus-Maserati",
+    "color": "#B22222"
+  },
+  {
+    "name": "Lotus-Pratt & Whitney",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Lyncar",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Maki",
+    "color": "#A93226"
+  },
+  {
+    "name": "Manor Marussia",
+    "color": "#2C3E50"
+  },
+  {
+    "name": "March",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "March-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "March-Ford",
+    "color": "#2980B9"
+  },
+  {
+    "name": "Marchese",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Martini",
+    "color": "#2980B9"
+  },
+  {
+    "name": "Marussia",
+    "color": "#2C3E50"
+  },
+  {
+    "name": "Maserati",
+    "color": "#D35400"
+  },
+  {
+    "name": "Matra",
+    "color": "#2C3E50"
+  },
+  {
+    "name": "Matra-Ford",
+    "color": "#2980B9"
+  },
+  {
+    "name": "MBM",
+    "color": "#9B111E"
+  },
+  {
+    "name": "McGuire",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "McLaren",
+    "color": "#FF4500"
+  },
+  {
+    "name": "McLaren-Alfa Romeo",
+    "color": "#9B111E"
+  },
+  {
+    "name": "McLaren-BRM",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "McLaren-Ford",
+    "color": "#F39C12"
+  },
+  {
+    "name": "McLaren-Serenissima",
+    "color": "#D35400"
+  },
+  {
+    "name": "Mercedes",
+    "color": "#00D2BE"
+  },
+  {
+    "name": "Merzario",
+    "color": "#7D3C98"
+  },
+  {
+    "name": "Meskowski",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "MF1",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Milano",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Minardi",
+    "color": "#0097C7"
+  },
+  {
+    "name": "Moore",
+    "color": "#D35400"
+  },
+  {
+    "name": "Nichels",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Olson",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Onyx",
+    "color": "#6C3483"
+  },
+  {
+    "name": "OSCA",
+    "color": "#A93226"
+  },
+  {
+    "name": "Osella",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Pacific",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Pankratz",
+    "color": "#D5DBDB"
+  },
+  {
+    "name": "Parnelli",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Pawl",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Penske",
+    "color": "#DC2828"
+  },
+  {
+    "name": "Phillips",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Politoys",
+    "color": "#6C3483"
+  },
+  {
+    "name": "Porsche",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Prost",
+    "color": "#0056A0"
+  },
+  {
+    "name": "Protos",
+    "color": "#B22222"
+  },
+  {
+    "name": "Racing Point",
+    "color": "#58C9B9"
+  },
+  {
+    "name": "Rae",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "RAM",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "RE",
+    "color": "#D35400"
+  },
+  {
+    "name": "Rebaque",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Red Bull",
+    "color": "#1E41FF"
+  },
+  {
+    "name": "Renault",
+    "color": "#F5A623"
+  },
+  {
+    "name": "Rial",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Sauber",
+    "color": "#2C3E50"
+  },
+  {
+    "name": "Scarab",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Schroeder",
+    "color": "#7D3C98"
+  },
+  {
+    "name": "Scirocco",
+    "color": "#D35400"
+  },
+  {
+    "name": "Shadow",
+    "color": "#2E86C1"
+  },
+  {
+    "name": "Shadow-Ford",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Shadow-Matra",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Shannon",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Sherman",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Simca",
+    "color": "#E74C3C"
+  },
+  {
+    "name": "Simtek",
+    "color": "#5D6D7E"
+  },
+  {
+    "name": "Snowberger",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Spirit",
+    "color": "#5D6D7E"
+  },
+  {
+    "name": "Spyker",
+    "color": "#FC4C02"
+  },
+  {
+    "name": "Spyker MF1",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Stebro",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Stevens",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Stewart",
+    "color": "#1F618D"
+  },
+  {
+    "name": "Super Aguri",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Surtees",
+    "color": "#FF4500"
+  },
+  {
+    "name": "Sutton",
+    "color": "#F1C40F"
+  },
+  {
+    "name": "Talbot-Lago",
+    "color": "#D35400"
+  },
+  {
+    "name": "Team Lotus",
+    "color": "#006400"
+  },
+  {
+    "name": "Tec-Mec",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Tecno",
+    "color": "#D35400"
+  },
+  {
+    "name": "Theodore",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Token",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Toleman",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Toro Rosso",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Toyota",
+    "color": "#FF0000"
+  },
+  {
+    "name": "Trevis",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Trojan",
+    "color": "#6C3483"
+  },
+  {
+    "name": "Turner",
+    "color": "#FF5733"
+  },
+  {
+    "name": "Tyrrell",
+    "color": "#0074B7"
+  },
+  {
+    "name": "Vanwall",
+    "color": "#D35400"
+  },
+  {
+    "name": "Veritas",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Virgin",
+    "color": "#9B111E"
+  },
+  {
+    "name": "Watson",
+    "color": "#F39C12"
+  },
+  {
+    "name": "Wetteroth",
+    "color": "#8E44AD"
+  },
+  {
+    "name": "Williams",
+    "color": "#0056A0"
+  },
+  {
+    "name": "Wolf",
+    "color": "#1C1C1C"
+  },
+  {
+    "name": "Zakspeed",
+    "color": "#F1C40F"
+  }
+]

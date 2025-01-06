@@ -4,9 +4,9 @@
 }
 
 .search-input {
-  width: 90%;
+  width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -43,15 +43,14 @@
   margin: 0 10px;
 }
 
-/* Media query para pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .driver-item {
-    flex: 1 1 calc(50% - 16px); /* Dos columnas en pantallas pequeñas */
+    flex: 1 1 calc(50% - 16px);
   }
 }
 
 @media screen and (max-width: 480px) {
   .driver-item {
-    flex: 1 1 100%; /* Una columna en pantallas muy pequeñas */
+    flex: 1 1 100%;
   }
 }

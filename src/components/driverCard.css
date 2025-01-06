@@ -1,30 +1,48 @@
 .driver-card {
+  position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  background-color: #f1f1f1;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border: 2px solid var(--constructor-color, #000);
+  background-color: var(--background-color-driver-card);
+}
+
+.driver-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  background-color: var(--constructor-color, #000);
+  z-index: 0;
 }
 
 .driver-info {
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  backface-visibility: hidden;
 }
 
 .driver-code {
   font-family: "F1 Regular", sans-serif;
-  src: url("../fonts/Formula1-Regular.otf") format("truetype");
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: var(--font-color-driver-card);
 }
 
 .driver-name {
   font-size: 16px;
-  color: #333;
-  font-family: "F1 Regular", sans-serif;
-  src: url("../fonts/Formula1-Regular.otf") format("truetype");
+  color: var(--font-color-driver-card-secondary);
 }
