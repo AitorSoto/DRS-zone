@@ -13,11 +13,3 @@
   height: 150px;
   background-size: cover;
 }
-
-@media screen and (max-width: 768px) {
-  .constructor-image {
-    width: 150px;
-    height: 75px;
-    background-size: cover;
-  }
-}

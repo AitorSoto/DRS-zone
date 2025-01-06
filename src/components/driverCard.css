@@ -12,6 +12,7 @@
   overflow: hidden;
   backface-visibility: hidden;
   border: 2px solid var(--constructor-color, #000);
+  background-color: var(--background-color-driver-card);
 }
 
 .driver-card::before {
@@ -38,10 +39,10 @@
   font-family: "F1 Regular", sans-serif;
   font-size: 24px;
   font-weight: bold;
-  color: #000;
+  color: var(--font-color-driver-card);
 }
 
 .driver-name {
   font-size: 16px;
-  color: #333;
+  color: var(--font-color-driver-card-secondary);
 }

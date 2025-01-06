@@ -7,6 +7,12 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --background-color-driver-card: #15151e;
+  --font-color-driver-card: #fff;
+  --font-color-driver-card-secondary: #ccc;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
 }
 
 h1 {

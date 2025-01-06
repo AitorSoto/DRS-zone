@@ -52,7 +52,7 @@ function Drivers() {
         })
       );
       setData(driversWithConstructors);
-      setTotalPages(result.paginationInfo.numberOfPages);
+      setTotalPages(result.paginationInfo.numberOfPages + 1);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
