@@ -1,0 +1,58 @@
+.footer {
+  background-color: var(--background-color-driver-card);
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid var(--font-secondary-color);
+  margin-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer p {
+  margin: 0;
+  color: var(--font-secondary-color);
+  font-family: "F1-Regular", sans-serif;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer-icons a {
+  color: var(--font-primary-color);
+  transition: color 0.3s ease;
+  font-size: 2em;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--font-primary-color);
+  font-style: italic;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--font-secondary-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}

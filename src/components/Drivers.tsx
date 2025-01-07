@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./drivers.css";
-import DriverCard from "./components/DriverCard";
+import DriverCard from "./DriverCard";
 import { debounce } from "lodash";
 
 // Definir las interfaces fuera de la función
