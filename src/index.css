@@ -10,9 +10,15 @@
   --background-color-driver-card: #15151e;
   --font-color-driver-card: #fff;
   --font-color-driver-card-secondary: #ccc;
+  --f1-color-theme: #e10600;
 
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {

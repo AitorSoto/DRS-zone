@@ -14,12 +14,19 @@ const ConstructorCard: React.FC<ConstructorCardProps> = ({
       .replace(/\s+/g, "")}.avif`;
   };
 
+  const handleImageError = (
+    event: React.SyntheticEvent<HTMLImageElement, Event>
+  ) => {
+    event.currentTarget.src = "../assets/constructors/default_team.png";
+  };
+
   return (
     <div className="constructor-card">
       <img
         src={getConstructorImagePath(constructorName)}
         alt={constructorName}
         className="constructor-image"
+        onError={handleImageError}
       />
     </div>
   );
