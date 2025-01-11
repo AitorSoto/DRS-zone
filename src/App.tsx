@@ -9,6 +9,8 @@ import Drivers from "./components/Drivers";
 import DriverDetails from "./components/DriverDetails";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
+import Circuits from "./components/Circuits";
+import CircuitDetails from "./components/CircuitDetail";
 
 function App() {
   const location = useLocation();
@@ -37,6 +39,31 @@ function App() {
           element={
             <Layout>
               <DriverDetails />
+            </Layout>
+          }
+        />
+        <Route
+          path="/circuits"
+          element={
+            <Layout>
+              <Circuits />
+            </Layout>
+          }
+        />
+        <Route
+          path="/circuits/:id"
+          element={
+            <Layout>
+              <CircuitDetails />
+            </Layout>
+          }
+        />
+
+        <Route
+          path="*"
+          element={
+            <Layout>
+              <h1>Not Found</h1>
             </Layout>
           }
         />

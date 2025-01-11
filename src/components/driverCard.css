@@ -1,31 +1,3 @@
-.driver-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  padding: 10px;
-  box-sizing: border-box;
-  overflow: hidden;
-  backface-visibility: hidden;
-  border: 2px solid var(--constructor-color, #000);
-  background-color: var(--background-color-driver-card);
-}
-
-.driver-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 100%;
-  background-color: var(--constructor-color, #000);
-  z-index: 0;
-}
-
 .driver-info {
   position: relative;
   z-index: 1;
