@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useDeferredValue } from "react";
 import { useNavigate } from "react-router-dom";
 import "./circuits.css";
 import { useDebounce } from "../hooks/debounce";
@@ -26,17 +26,13 @@ function Circuits() {
   const [page, setPage] = useState(0);
   const [totalPages, setTotalPages] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
-  const debouncedSearchTerm = useDebounce(searchTerm, 300);
+  const deferredSearchTerm = useDeferredValue(searchTerm);
+  const debouncedSearchTerm = useDebounce(deferredSearchTerm, 300);
   const navigate = useNavigate();
   const searchInputRef = useRef<HTMLInputElement>(null);
 
-  function fetchAllCircuits(
-    pageNo: number,
-    searchTerm: string
-  ): Promise<Result> {
-    return fetch(
-      `http://localhost:8080/circuits?pageNo=${pageNo}&pageSize=11&search=${searchTerm}`
-    )
+  function fetchAllCircuits(pageNo: number): Promise<Result> {
+    return fetch(`http://localhost:8080/circuits?pageNo=${pageNo}&pageSize=11`)
       .then((response) => response.json())
       .then((result: Result) => {
         setData(result.dto);
@@ -45,8 +41,20 @@ function Circuits() {
       });
   }
 
-  const handleCircuitSearch = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchTerm(event.target.value);
+  function fetchSearchedCircuits(term: string) {
+    fetch(`http://localhost:8080/circuit/match?term=${term}`)
+      .then((response) => response.json())
+      .then((result: Circuit[]) => {
+        setData(result);
+        setTotalPages(0);
+      });
+  }
+
+  const handleCircuitSearch = async (
+    event: React.ChangeEvent<HTMLInputElement>
+  ) => {
+    const newSearchTerm = event.target.value;
+    await setSearchTerm(newSearchTerm);
   };
 
   const handlePageChange = (newPage: number) => {
@@ -55,12 +63,16 @@ function Circuits() {
     navigate(`?page=${adjustedPage}`);
   };
 
-  const handleDriverClick = (driverId: number) => {
+  const handleCircuitClick = (driverId: number) => {
     navigate(`/circuits/${driverId}`);
   };
 
   useEffect(() => {
-    fetchAllCircuits(page, debouncedSearchTerm);
+    if (debouncedSearchTerm.trim() === "") {
+      fetchAllCircuits(page);
+    } else {
+      fetchSearchedCircuits(debouncedSearchTerm);
+    }
   }, [page, debouncedSearchTerm]);
 
   return (
@@ -78,7 +90,7 @@ function Circuits() {
           {data.map((circuit) => (
             <div
               key={circuit.circuitId}
-              onClick={() => handleDriverClick(circuit.circuitId)}
+              onClick={() => handleCircuitClick(circuit.circuitId)}
               className="circuit-item"
             >
               <CircuitCard circuit={circuit} />
