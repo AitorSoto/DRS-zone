@@ -20,7 +20,6 @@ const CircuitCard: React.FC<CircuitProps> = ({ circuit }) => {
 
   const schedule = getSchedule(circuit.name);
 
-  // Determinar el color de fondo y el color del texto basado en el horario
   const getStyles = (time: string) => {
     if (time === "Day") {
       return { backgroundColor: "#87CEEB", color: "#333" };

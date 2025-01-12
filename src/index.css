@@ -70,3 +70,7 @@ button:focus-visible {
 .f1-font-bold {
   font-family: "F1-Bold", sans-serif;
 }
+
+.long-words {
+  overflow-wrap: break-word;
+}

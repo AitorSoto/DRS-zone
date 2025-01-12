@@ -1,6 +1,5 @@
-// filepath: /Users/aitorsotojimenez/proyectos/f1/front/f1-web/src/components/Circuits.tsx
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./circuits.css";
 import { useDebounce } from "../hooks/debounce";
 import CircuitCard from "./CircuitCard";
@@ -29,7 +28,6 @@ function Circuits() {
   const [searchTerm, setSearchTerm] = useState("");
   const debouncedSearchTerm = useDebounce(searchTerm, 300);
   const navigate = useNavigate();
-  const location = useLocation();
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   function fetchAllCircuits(
