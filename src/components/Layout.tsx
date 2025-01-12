@@ -1,28 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import "./layout.css";
 import Footer from "./Footer";
+import Header from "./Header";
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="layout">
-      <header className="header">
-        <nav>
-          <ul>
-            <li>
-              <Link to="/" className="f1-font">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/drivers" className="f1-font">
-                Drivers
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Header />
       <motion.main
         className="main-content"
         initial={{ opacity: 0, x: 300 }}

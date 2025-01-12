@@ -131,7 +131,7 @@ function Drivers() {
             placeholder="Search drivers..."
             value={searchTerm}
             onChange={handleSearchChange}
-            className="search-input"
+            className="search-input f1-font"
             ref={searchInputRef}
           />
           {data.map((driver) => (

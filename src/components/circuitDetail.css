@@ -1,0 +1,113 @@
+.circuit-details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.circuit-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.circuit-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.podium {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.podium-place {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.place-1 {
+  order: 2;
+  height: 150px;
+  width: 300px;
+  background-color: gold;
+}
+
+.place-2 {
+  order: 1;
+  height: 120px;
+  width: 300px;
+  background-color: silver;
+}
+
+.place-3 {
+  order: 3;
+  height: 100px;
+  width: 300px;
+  background-color: #cd7f32;
+}
+
+.podium-position {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.podium-name {
+  font-size: 18px;
+  margin: 5px 0;
+  color: var(--background-color-driver-card);
+}
+
+.podium-victories {
+  font-size: 16px;
+  color: #555;
+}
+
+.winners-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.winners-table th,
+.winners-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.winners-table th {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .podium {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podium-place {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .place-1 {
+    height: 100px;
+  }
+
+  .place-2 {
+    height: 100px;
+  }
+
+  .place-3 {
+    height: 100px;
+  }
+}

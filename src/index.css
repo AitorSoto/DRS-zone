@@ -16,6 +16,11 @@
   background-color: #242424;
 }
 
+html {
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -64,4 +69,8 @@ button:focus-visible {
 
 .f1-font-bold {
   font-family: "F1-Bold", sans-serif;
+}
+
+.long-words {
+  overflow-wrap: break-word;
 }
