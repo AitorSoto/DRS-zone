@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef, useDeferredValue } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./circuits.css";
 import { useDebounce } from "../hooks/debounce";
 import CircuitCard from "./CircuitCard";
+import Chat from "./chat";
 
 interface Circuit {
   circuitId: number;
@@ -29,6 +30,7 @@ function Circuits() {
   const deferredSearchTerm = useDeferredValue(searchTerm);
   const debouncedSearchTerm = useDebounce(deferredSearchTerm, 300);
   const navigate = useNavigate();
+  const location = useLocation();
   const searchInputRef = useRef<HTMLInputElement>(null);
 
   function fetchAllCircuits(pageNo: number): Promise<Result> {
@@ -54,13 +56,13 @@ function Circuits() {
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const newSearchTerm = event.target.value;
-    await setSearchTerm(newSearchTerm);
+    setSearchTerm(newSearchTerm);
   };
 
   const handlePageChange = (newPage: number) => {
     let adjustedPage = Math.max(0, Math.min(newPage, totalPages - 1));
-    setPage(newPage);
-    navigate(`?page=${adjustedPage}`);
+    setPage(adjustedPage);
+    navigate(`?page=${adjustedPage + 1}`);
   };
 
   const handleCircuitClick = (driverId: number) => {
@@ -68,12 +70,17 @@ function Circuits() {
   };
 
   useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const pageParam = queryParams.get("page");
+    const pageNo = pageParam ? Math.max(0, parseInt(pageParam, 10) - 1) : 0; // Convertir de 1-basado a 0-basado
+
+    setPage(pageNo);
     if (debouncedSearchTerm.trim() === "") {
       fetchAllCircuits(page);
     } else {
       fetchSearchedCircuits(debouncedSearchTerm);
     }
-  }, [page, debouncedSearchTerm]);
+  }, [debouncedSearchTerm, page, location.search]);
 
   return (
     <section>
@@ -117,6 +124,7 @@ function Circuits() {
           </div>
         )}
       </article>
+      <Chat param={data} />
     </section>
   );
 }

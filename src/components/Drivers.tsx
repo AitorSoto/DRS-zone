@@ -9,6 +9,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import "./drivers.css";
 import DriverCard from "./DriverCard";
 import { useDebounce } from "../hooks/debounce";
+import Chat from "./chat";
 
 interface PaginationInfo {
   hasNext: boolean;
@@ -164,6 +165,7 @@ function Drivers() {
           </div>
         )}
       </article>
+      <Chat param={data} />
     </section>
   );
 }
