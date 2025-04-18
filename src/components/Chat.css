@@ -1,0 +1,137 @@
+.chat-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chat-icon {
+  background-color: #e10600; /* Rojo F1 */
+  color: white;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.chat-icon:hover {
+  transform: scale(1.1);
+  background-color: #c00000; /* Rojo más oscuro */
+}
+
+.chat-box {
+  width: 350px;
+  height: 500px;
+  background-color: #15151e; /* Fondo oscuro */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 2px solid #e10600; /* Borde rojo F1 */
+}
+
+.chat-header {
+  background-color: #e10600; /* Rojo F1 */
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "F1 Bold", sans-serif;
+  font-size: 18px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-button:hover {
+  transform: scale(1.2);
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background-color: #1c1c24; /* Fondo ligeramente más claro */
+  color: #fff; /* Texto blanco */
+  font-family: "F1 Regular", sans-serif;
+  font-size: 14px;
+}
+
+.chat-message {
+  margin-bottom: 15px;
+}
+
+.user-message {
+  text-align: right;
+  margin-bottom: 5px;
+  color: #e10600; /* Texto rojo para el usuario */
+}
+
+.bot-message {
+  text-align: left;
+  margin-bottom: 5px;
+  color: #fff; /* Texto blanco para el bot */
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #ccc;
+}
+
+.chat-input {
+  display: flex;
+  padding: 15px;
+  border-top: 2px solid #e10600; /* Línea roja */
+  background-color: #15151e; /* Fondo oscuro */
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #1c1c24; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  font-family: "F1 Regular", sans-serif;
+}
+
+.chat-input input::placeholder {
+  color: #aaa; /* Texto placeholder gris */
+}
+
+.chat-input button {
+  background-color: #e10600; /* Rojo F1 */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "F1 Bold", sans-serif;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-input button:hover {
+  background-color: #c00000; /* Rojo más oscuro */
+  transform: scale(1.05);
+}
+
+.chat-input button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
